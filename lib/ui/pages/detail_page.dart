@@ -1,4 +1,5 @@
 import 'package:airplane/shared/theme.dart';
+import 'package:airplane/ui/widgets/interest_item.dart';
 import 'package:airplane/ui/widgets/photo_item.dart';
 import 'package:flutter/material.dart';
 
@@ -166,6 +167,32 @@ class DetailPage extends StatelessWidget {
           );
         }
 
+        Widget interest() {
+          return Row(
+            children: const [
+              InterestItem(
+                text: 'Kids Park',
+              ),
+              InterestItem(
+                text: 'Honor Bridge',
+              ),
+            ],
+          );
+        }
+
+        Widget interest2() {
+          return Row(
+            children: const [
+              InterestItem(
+                text: 'City Museum',
+              ),
+              InterestItem(
+                text: 'Centra Mall',
+              ),
+            ],
+          );
+        }
+
         return Container(
           width: double.infinity,
           margin: const EdgeInsets.only(top: 30),
@@ -189,6 +216,10 @@ class DetailPage extends StatelessWidget {
               photos(),
               const SizedBox(height: 20),
               titleInterest(),
+              const SizedBox(height: 6),
+              interest(),
+              const SizedBox(height: 10),
+              interest2(),
             ],
           ),
         );
