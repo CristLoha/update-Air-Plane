@@ -1,4 +1,5 @@
 import 'package:airplane/shared/theme.dart';
+import 'package:airplane/ui/widgets/custom_button.dart';
 import 'package:airplane/ui/widgets/interest_item.dart';
 import 'package:airplane/ui/widgets/photo_item.dart';
 import 'package:flutter/material.dart';
@@ -193,6 +194,45 @@ class DetailPage extends StatelessWidget {
           );
         }
 
+        Widget priceButton() {
+          Widget button() {
+            return CustomButton(
+              title: 'Book Now',
+              onPressed: () {},
+              widht: 170,
+            );
+          }
+
+          return Container(
+            width: double.infinity,
+            margin: const EdgeInsets.symmetric(vertical: 30),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'IDR 2.500.000',
+                        style: blackTextStyle.copyWith(
+                          fontSize: 18,
+                          fontWeight: medium,
+                        ),
+                      ),
+                      const SizedBox(height: 5),
+                      Text(
+                        'per orang',
+                        style: greyTextStyle.copyWith(fontWeight: light),
+                      ),
+                    ],
+                  ),
+                ),
+                button(),
+              ],
+            ),
+          );
+        }
+
         return Container(
           width: double.infinity,
           margin: const EdgeInsets.only(top: 30),
@@ -220,6 +260,7 @@ class DetailPage extends StatelessWidget {
               interest(),
               const SizedBox(height: 10),
               interest2(),
+              priceButton(),
             ],
           ),
         );
