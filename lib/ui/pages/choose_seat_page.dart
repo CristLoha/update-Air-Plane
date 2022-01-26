@@ -1,4 +1,5 @@
 import 'package:airplane/shared/theme.dart';
+import 'package:airplane/ui/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
 import 'set_item.dart';
@@ -84,6 +85,46 @@ class ChooseSeatPage extends StatelessWidget {
     }
 
     Widget selectSeat() {
+      Widget yourSeat() {
+        return Container(
+          margin: const EdgeInsets.only(top: 30),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                'Your Seat',
+                style: greyTextStyle.copyWith(fontWeight: light),
+              ),
+              Text(
+                'A3, B3',
+                style:
+                    blackTextStyle.copyWith(fontSize: 16, fontWeight: medium),
+              ),
+            ],
+          ),
+        );
+      }
+
+      Widget total() {
+        return Container(
+          margin: const EdgeInsets.only(top: 18),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                'Your Seat',
+                style: greyTextStyle.copyWith(fontWeight: light),
+              ),
+              Text(
+                'IDR 540.000.000',
+                style: purpleTextStyle.copyWith(
+                    fontSize: 16, fontWeight: semiBold),
+              ),
+            ],
+          ),
+        );
+      }
+
       return Container(
         width: double.infinity,
         margin: const EdgeInsets.only(
@@ -315,7 +356,20 @@ class ChooseSeatPage extends StatelessWidget {
                 ],
               ),
             ),
+            yourSeat(),
+            total(),
           ],
+        ),
+      );
+    }
+
+    Widget checkoutButton() {
+      return CustomButton(
+        title: 'Continue to Checkout',
+        onPressed: () {},
+        margin: const EdgeInsets.only(
+          top: 30,
+          bottom: 46,
         ),
       );
     }
@@ -331,6 +385,7 @@ class ChooseSeatPage extends StatelessWidget {
             title(),
             seatStatus(),
             selectSeat(),
+            checkoutButton(),
           ],
         ),
       ),
