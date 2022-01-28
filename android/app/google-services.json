@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "182085538044",
+    "project_id": "airplane-7ff1b",
+    "storage_bucket": "airplane-7ff1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182085538044:android:0e3541600e62838969c779",
+        "android_client_info": {
+          "package_name": "com.christ.air_plane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182085538044-b49ktkquq3bc8tgre3gden1gqmh8varp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByf80X0J1z84RB-qtP3xPoLiJjbLiDM08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182085538044-b49ktkquq3bc8tgre3gden1gqmh8varp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182085538044:android:4257faf703d0c2d369c779",
+        "android_client_info": {
+          "package_name": "com.christ.airplane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182085538044-b49ktkquq3bc8tgre3gden1gqmh8varp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByf80X0J1z84RB-qtP3xPoLiJjbLiDM08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182085538044-b49ktkquq3bc8tgre3gden1gqmh8varp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
